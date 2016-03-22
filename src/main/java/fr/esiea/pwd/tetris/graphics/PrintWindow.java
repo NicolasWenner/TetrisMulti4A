@@ -25,9 +25,9 @@ public  class PrintWindow extends JFrame {
 
 	//this.getContentPane().setBackground(Color.BLACK);
 	
-	
-	this.getContentPane().add(scorePanel,BorderLayout.EAST);
 	this.getContentPane().add(gameBoard,BorderLayout.WEST);
+	this.getContentPane().add(scorePanel,BorderLayout.EAST);
+	
 	
 	
 		

@@ -14,7 +14,7 @@ public class PrintBoard extends JPanel {
 		
 		JLabel title = new JLabel("Game Area");
 		title.setForeground(Color.white);
-		this.setPreferredSize(new Dimension(600,300));
+		this.setPreferredSize(new Dimension(700,300));
 		this.setMaximumSize(new Dimension(600,300));
 		this.setMinimumSize(new Dimension(500,200));
 		this.setVisible(true);
@@ -23,11 +23,5 @@ public class PrintBoard extends JPanel {
 		this.setBackground(Color.DARK_GRAY);
 }
 	
-	public void paint (Graphics g) {
-		
-		g.drawRect(10, 10, 100, 100);
-		g.setColor(Color.BLUE);
-		
-		
-	}
+
 }
