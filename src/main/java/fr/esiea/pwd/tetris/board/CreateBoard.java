@@ -2,7 +2,7 @@ package fr.esiea.pwd.tetris.board;
 
 import java.awt.*;
 
-public class CreateBoard extends Canvas {
+public class CreateBoard {
 	
 	public CreateBoard () {
 		
