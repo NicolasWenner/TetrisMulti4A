@@ -7,17 +7,13 @@ import fr.esiea.pwd.tetris.movement.Movement;
 
 public class InputReader {
 	
-	public InputReader () {
-		
-	}
-
-	
 	public List<Movement> getInput() {
         try {
-            List<Movement> result = new ArrayList<>();
+            List<Movement> result = new ArrayList<Movement>();
             int read = RawConsoleInput.read(false);
             while (read != -2){
-                result.add((char) read);
+            	Movement movement = Movement.Input(read);
+                result.add(movement);
                 read = RawConsoleInput.read(false);
             }
             return result;

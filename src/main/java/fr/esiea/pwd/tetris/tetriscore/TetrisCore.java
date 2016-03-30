@@ -6,15 +6,15 @@ public class TetrisCore {
 	
 	private static final InputReader reader = new InputReader();
 	private static final Printer gamePrinter = new Printer();
-	private static final 
+	private static final BoardGame board = new BoardGame();
 	
 	public void run() {
 		
 		reader.read();
 		
 		while (boardGame.isNotLost()) {
-			List<Movement> movements = inputReader.getMovements();
-			board.apply(movement);
+			List<Movement> movements = InputReader.getMovements();
+			board.apply(movements);
 			gamePrinter.print;
 			reader.read();			
 		}

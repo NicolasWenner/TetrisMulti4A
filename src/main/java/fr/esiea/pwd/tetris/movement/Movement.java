@@ -35,7 +35,7 @@ public enum Movement {
 		TURN_LEFT('a'){
 			@Override
 			public void move(MovementValidator movementValidator, Movable movable){
-				movable.turnLeft(movementValidator;)
+				movable.turnLeft(movementValidator);
 			}
 		},
 		
@@ -53,23 +53,17 @@ public enum Movement {
 		}
 		
 		public static Movement Input(int readValue){
-			if(readValue == 's'){
+			if(readValue == 's')
 				return Movement.DOWN ;
-			}
-			else if(readValue == 'd'){
+			else if(readValue == 'd')
 				return Movement.RIGHT ;
-			}
-			else if(readValue == 'q'){
+			else if(readValue == 'q')
 				return Movement.LEFT ;
-			}
-			else if(readValue == 'a'){
+			else if(readValue == 'a')
 				return Movement.TURN_LEFT;
-			}
-			else if(readValue == 'e'){
+			else if(readValue == 'e')
 				return Movement.TURN_RIGHT ;
-			}
-			else {
+			else
 				return Movement.NONE;
-			}
 		}
 	}
