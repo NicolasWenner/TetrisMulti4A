@@ -1,6 +1,9 @@
 package fr.esiea.pwd.tetris.tetriscore;
 
+import fr.esiea.pwd.tetris.board.BoardGame;
+import fr.esiea.pwd.tetris.graphics.Printer;
 import fr.esiea.pwd.tetris.inputreader.InputReader;
+import fr.esiea.pwd.tetris.movement.Movement;
 
 public class TetrisCore {
 	
@@ -13,7 +16,7 @@ public class TetrisCore {
 		reader.read();
 		
 		while (board.isNotLost()) {
-			List<Movement> movements = InputReader.getMovements();
+			List<Movement> movements = InputReader.getInput();
 			board.apply(movements);
 			gamePrinter.print;
 			reader.read();			
