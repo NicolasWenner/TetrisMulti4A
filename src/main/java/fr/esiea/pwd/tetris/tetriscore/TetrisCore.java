@@ -4,21 +4,16 @@ import fr.esiea.pwd.tetris.inputreader.InputReader;
 
 public class TetrisCore {
 	
-	private boolean isNotLost=true;
 	private static final InputReader reader = new InputReader();
 	private static final Printer gamePrinter = new Printer();
-	
-	public TetrisCore () {
-		
-		
-	}
+	private static final 
 	
 	public void run() {
 		
 		reader.read();
 		
-		while (isNotLost) {
-			
+		while (boardGame.isNotLost()) {
+			List<Movement> movements = inputReader.getMovements();
 			board.apply(movement);
 			gamePrinter.print;
 			reader.read();			

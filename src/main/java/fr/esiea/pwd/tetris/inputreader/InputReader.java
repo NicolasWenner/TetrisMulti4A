@@ -5,15 +5,6 @@ import java.util.*;
 
 public class InputReader {
 	
-	public InputReader () {
-		
-	}
-
-	public void read() {
-		// TODO Auto-generated method stub
-		
-	}
-	
 	public Collection<Character> getInput() {
         try {
             Collection<Character> result = new ArrayList<Character>();
