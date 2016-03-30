@@ -6,8 +6,6 @@ import java.awt.Dimension;
 
 import javax.swing.*;
 
-import fr.esiea.pwd.tetris.board.CreateBoard;
-
 public class PrintBoard extends JPanel {
 	
 	public PrintBoard () {
