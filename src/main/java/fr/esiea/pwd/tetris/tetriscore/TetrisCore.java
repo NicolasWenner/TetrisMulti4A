@@ -12,7 +12,7 @@ public class TetrisCore {
 		
 		reader.read();
 		
-		while (boardGame.isNotLost()) {
+		while (board.isNotLost()) {
 			List<Movement> movements = InputReader.getMovements();
 			board.apply(movements);
 			gamePrinter.print;
