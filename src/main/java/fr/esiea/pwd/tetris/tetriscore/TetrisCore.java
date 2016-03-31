@@ -12,14 +12,11 @@ public class TetrisCore {
 	private static final BoardGame board = new BoardGame();
 	
 	public void run() {
-		
-		reader.read();
-		
 		while (board.isNotLost()) {
-			List<Movement> movements = InputReader.getInput();
+			List<Movement> movements = InputReader.getMovement();
 			board.apply(movements);
 			gamePrinter.print;
-			reader.read();			
+			reader.read();
 		}
 	}
 
