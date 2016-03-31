@@ -63,29 +63,5 @@ public class MovingPiece implements Movable {
 		
 	}
 
-	public void goDown() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void goRight() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void goLeft() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void turnLeft() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void turnRight() {
-		// TODO Auto-generated method stub
-		
-	}
 }
 
