@@ -67,5 +67,5 @@ public enum Movement {
 				return Movement.NONE;
 		}
 		
-		public abstract void move(Movable movable);
+		public abstract void move(MovementValidator movementValidator, Movable movable);
 	}
