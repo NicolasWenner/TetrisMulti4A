@@ -28,7 +28,7 @@ public enum Movement {
 		TURN_RIGHT('e'){
 			@Override
 			public void move(MovementValidator movementValidator, Movable movable){
-				movable.turnRight(movementValidator;)
+				movable.turnRight(movementValidator);
 			}
 		},
 		
