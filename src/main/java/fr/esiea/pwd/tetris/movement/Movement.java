@@ -4,54 +4,55 @@ public enum Movement {
 		
 		DOWN('s'){
 			@Override	
-			public void move(MovementValidator movementValidator, Movable movable){
-				movable.goDown(movementValidator);
+			public void move(Movable movable){
+				movable.goDown();
 			}
 			
 		},
 		
 		RIGHT('d'){
 			@Override
-			public void move(MovementValidator movementValidator, Movable movable){
-				movable.goRight(movementValidator);
+			public void move(Movable movable){
+				movable.goRight();
 				
 			}
 		},
 		
 		LEFT('q'){
 			@Override
-			public void move(MovementValidator movementValidator, Movable movable){
-				movable.goLeft(movementValidator);
+			public void move( Movable movable){
+				movable.goLeft();
 			}
 		},
 		
 		TURN_RIGHT('e'){
 			@Override
-			public void move(MovementValidator movementValidator, Movable movable){
-				movable.turnRight(movementValidator);
+			public void move( Movable movable){
+				movable.turnRight();
 			}
 		},
 		
 		TURN_LEFT('a'){
 			@Override
-			public void move(MovementValidator movementValidator, Movable movable){
-				movable.turnLeft(movementValidator);
+			public void move( Movable movable){
+				movable.turnLeft();
 			}
 		},
 		
 		NONE('*'){
 			@Override
-			public void move(MovementValidator movementValidator, Movable ignore){
+			public void move( Movable ignore){
+				//ignore
 			}
 		};
-		
-		private final char bind;
-		
-		Movement(char l){
-			this.bind = l;
-				
-		}
-		
+	
+	
+	private final char bind;
+	
+	Movement(char l){
+		this.bind = l;
+			
+	}
 		public static Movement Input(int readValue){
 			if(readValue == 's')
 				return Movement.DOWN ;
@@ -67,5 +68,5 @@ public enum Movement {
 				return Movement.NONE;
 		}
 		
-		public abstract void move(MovementValidator movementValidator, Movable movable);
+		public abstract void move(Movable movable);
 	}
