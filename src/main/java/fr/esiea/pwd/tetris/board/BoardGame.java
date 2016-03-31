@@ -15,8 +15,6 @@ public class BoardGame implements printable {
 	public boolean board[][] = new boolean[height][width];
 	
 	public BoardGame(){
-		this.width = width;
-		this.height = height;
 		int i,j;
 		for(j = 0 ; j < width ; j++){
 			board[0][j] = true;
@@ -26,7 +24,6 @@ public class BoardGame implements printable {
 				board[i][j] = false;
 			}
 		}
-		this.board = board;
 	}
 	
 	public void applyMovements(ArrayList<Movement> movements){
