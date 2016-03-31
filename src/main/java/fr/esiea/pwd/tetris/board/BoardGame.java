@@ -10,7 +10,7 @@ public class BoardGame implements printable {
 	private MovingPiece piece;
 	MovementValidator movementValidator;
 	
-	public void applyMovements(List<Movement> movements){
+	public void applyMovements(ArrayList<Movement> movements){
 		for (Movement movement : movements){
 			movement.move(movementValidator, piece);
 		}

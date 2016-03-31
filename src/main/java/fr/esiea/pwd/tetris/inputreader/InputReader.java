@@ -7,9 +7,9 @@ import fr.esiea.pwd.tetris.movement.Movement;
 
 public class InputReader {
 	
-	public static List<Movement> getMovement() {
+	public static ArrayList<Movement> getMovement() {
         try {
-            List<Movement> result = new ArrayList<Movement>();
+            ArrayList<Movement> result = new ArrayList<Movement>();
             int read = RawConsoleInput.read(false);
             while (read != -2){
             	Movement movement = Movement.Input(read);
