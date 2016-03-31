@@ -13,10 +13,9 @@ public class TetrisCore {
 	
 	public void run() {
 		while (board.isNotLost()) {
-			List<Movement> movements = InputReader.getMovement();
+			List<Movement> movements = reader.getMovement();
 			board.apply(movements);
-			gamePrinter.print;
-			reader.read();
+			gamePrinter.print();
 		}
 	}
 
