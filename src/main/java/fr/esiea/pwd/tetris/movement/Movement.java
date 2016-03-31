@@ -49,7 +49,7 @@ public enum Movement {
 		
 		Movement(char l){
 			this.bind = l;
-			
+				
 		}
 		
 		public static Movement Input(int readValue){
@@ -66,4 +66,6 @@ public enum Movement {
 			else
 				return Movement.NONE;
 		}
+		
+		public abstract void move(Movable movable);
 	}
