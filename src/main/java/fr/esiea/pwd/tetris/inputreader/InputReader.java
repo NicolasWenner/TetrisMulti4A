@@ -1,6 +1,7 @@
 package fr.esiea.pwd.tetris.inputreader;
 
 import java.io.IOException;
+
 import java.util.*;
 
 import fr.esiea.pwd.tetris.movement.Movement;
@@ -10,6 +11,7 @@ public class InputReader {
 	public static ArrayList<Movement> getMovement() {
         try {
             ArrayList<Movement> result = new ArrayList<Movement>();
+            //RawConsoleInput consoleReader = new RawConsoleInput(); 
             int read = RawConsoleInput.read(false);
             while (read != -2){
             	Movement movement = Movement.Input(read);
