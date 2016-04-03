@@ -23,6 +23,8 @@ Le tétris est en effet un jeu qui fait interagir un joueur avec des pièces qu�
 L’idée est pour leur joueur de regarder l’état du plateau et de réagir en fonction de la pièce qu’il a à placer. Ces deux derniers éléments sont contenus dans le BoardGame : le Modèle et retransmis à l’écran via le Printer : la Vue qui va donc faire la passerelle entre l’état du Modèle et le joueur.
 Le joueur va alors, pour placer sa pièce, donner des instructions qui seront reçues par l’InputReader : le Contrôleur. Ce dernier va traduire ces entrées en mouvements grâce à l’énumération Movement et les transmettre au BoardGame qui modifiera son état en fonctions des règles du jeu contenues dans son comportement (ses méthodes).
 
+NB : Vous trouverez en pdf sur ce git une représentation UML de notre architecture.
+
 Exercice Design Pattern / Solid :
 
 Lors de ce projet, nous nous sommes appuyés sur nos connaissances en java pour respecter au mieux les principes de la programmation orientée objet.
